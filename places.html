@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>places</title>
+    <style>
+        body{
+           background-color: pink;
+        }
+
+        .wrapper{
+            padding:3rem;
+          }
+          
+          .slide-container{
+            position:relative;
+            max-width:48rem;
+            margin:0 auto;
+          }
+          
+          .slider{
+            display:flex;
+            aspect-ratio:16/11;
+            overflow-x:hidden;
+            scroll-snap-type:x mandatory;
+            scroll-behavior:smooth;
+            box-shadow:0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+            border-radius:0.25rem;
+          }
+          
+          .slider img{
+            flex:1 0 100%;
+            scroll-snap-align:start;
+            object-fit:cover;
+          }
+          
+          .slider-nav{
+            display:flex;
+            column-gap:1rem;
+            position:absolute;
+            bottom:1.25rem;
+            left:50%;
+            transform:translateX(-50%);
+            z-index:1;
+          }
+          
+          .slider-nav a{
+            width:1rem;
+            height:1rem;
+            border-radius:50%;
+            background-color:black;
+          }
+          
+          .a a{
+            text-decoration: none;
+            color: black;
+            font-size: 25pxpx;
+          }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <a href="index.html"><img src="icons8-home-50.png"></a>
+    </div>
+    <section class="wrapper">
+        <div class="slide-container">
+           <div class="slider">
+              <img id="slide-1" src="GettyImages-149315271-591d7a8d3df78cf5fa007553.jpg" >
+             
+              <img id="slide-2" src="jaipur lead.webp">
+              
+              <img id="slide-3" src="jatayu1.jpg">
+
+              <img id="slide-4" src="m_activities_amritsar_golden_temple_l_427_639.avif">
+
+              <img id="slide-5" src="Taj_Mahal_(Edited).jpeg">
+             <div class="slider-nav">
+               <a href="#slide-1"></a>
+               <a href="#slide-2"></a>
+               <a href="#slide-3"></a>
+               <a href="#slide-4"></a>
+               <a href="#slide-5"></a>
+               </div>
+           </div>
+        </div>
+     </section>
+</body>
+</html>
